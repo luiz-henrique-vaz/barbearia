@@ -10,7 +10,7 @@ export default function Footer() {
             </div>
 
             <Copyright>
-                © Copyright Barbearia Grooming - 2023
+                © Copyright Luiz Henrique Vaz - 2023
             </Copyright>
 
         </ContainerFooter>
