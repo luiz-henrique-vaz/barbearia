@@ -150,7 +150,7 @@ export const Video = styled.div`
         height: auto;
     }
     @media (min-width: 1024px) {
-        width: 45vw;
+        width: 45   vw;
         height: auto;
     }
 `
