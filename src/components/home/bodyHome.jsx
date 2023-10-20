@@ -1,4 +1,4 @@
-import { ContainerBody, Banner, Container, Titulo, Sobre, Citacao, Mapa, Lista} from "./styled"
+import { ContainerBody, DivBanner, Banner, Container, Titulo, Sobre, Citacao, Mapa, ContainerVideo, Video, Lista} from "./styled"
 import BannerSVG from "../../banner.svg"
 
 export default function Body() {
@@ -9,9 +9,9 @@ export default function Body() {
 
     return(
         <ContainerBody>
-            <div>
+            <DivBanner>
                 <Banner src={BannerSVG}  alt=""/>
-            </div>
+            </DivBanner>
             <Container className="sobre">
                 <Titulo>
                     Quem somos
@@ -40,6 +40,7 @@ export default function Body() {
                 <Titulo>
                     O que oferecemos
                 </Titulo>
+                <ContainerVideo>
 
                 <Lista>
                     <li>Atendimento personalizado aos clientes</li>
@@ -51,8 +52,10 @@ export default function Body() {
                 </Lista>
 
                 <div>
-                <Mapa dangerouslySetInnerHTML={{ __html: `<iframe src="${videoURL}" width="100%" height="300" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border:0;" allowFullScreen></iframe>` }} />
+                <Video dangerouslySetInnerHTML={{ __html: `<iframe src="${videoURL}" width="100%" height="400" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border:0;" allowFullScreen></iframe>` }} />
                 </div>
+
+                </ContainerVideo>
             </Container>
 
         </ContainerBody>

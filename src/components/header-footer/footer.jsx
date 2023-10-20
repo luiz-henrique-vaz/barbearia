@@ -1,10 +1,10 @@
 
 import LogoSVG from "../../logoFooter.svg"
-import { ContainerHeaderFooter, Copyright, Logo } from "../home/styled"
+import { ContainerFooter, Copyright, Logo } from "../home/styled"
 
 export default function Footer() {
     return(
-        <ContainerHeaderFooter>
+        <ContainerFooter>
             <div className="logo">
                 <Logo src={LogoSVG}/>
             </div>
@@ -13,7 +13,7 @@ export default function Footer() {
                 © Copyright Barbearia Grooming - 2023
             </Copyright>
 
-        </ContainerHeaderFooter>
+        </ContainerFooter>
 
     )
 
