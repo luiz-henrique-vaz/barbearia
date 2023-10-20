@@ -61,12 +61,10 @@ export default function Body() {
                     <Input type="text" placeholder="Horário de funcionamento: 8h ás 20h"></Input>
                 </Campos>
                 
+            </Forms>
                 <Campos>
                     <Button type="submit" value="Enviar formulário" id="button" onClick={enviarForm}>Enviar formulário</Button>
                 </Campos>
-                
-                
-            </Forms>
 
             <Texto id="texto"></Texto>
         </Container>

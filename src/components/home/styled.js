@@ -10,12 +10,13 @@ export const ContainerHeader = styled.div`
     background-color: #EECCAD;
     padding: 2vh 0px;
     width: 100vW;
+    
     @media (min-width: 1024px) {
         
         flex-direction: row;
         justify-content: space-around;
         height: 10vh;
-         
+        
     }
 
 `
@@ -30,8 +31,8 @@ export const ContainerFooter = styled.div`
     @media (min-width: 1024px) {
         
         justify-content: space-around;
-        height: 20vh;
-         
+        height: 15vh;
+        
     }
 `
 
@@ -41,7 +42,7 @@ export const Logo = styled.img`
     width: 100%;
     filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 60%));
     @media (min-width: 1024px) {
-        width: 8vw;
+        width: 6vw;
         
     }
 `
@@ -53,7 +54,7 @@ export const Navbar = styled.div`
     align-items: center;
     justify-content: center;
     gap: 6%;
-    font-size: 16px;
+    font-size: 1.3rem;
     @media (min-width: 1024px) {
         width: 60vw;
         
@@ -66,12 +67,17 @@ export const Links = styled.a`
     padding: 2px 10px;
     font-weight: 500;
 
+    &:hover {
+        filter: drop-shadow(0px 0px 5px rgba(52 22 15 / 100%));
+    }
+    
+    
 `
 
 //Body
 
 export const ContainerBody = styled.div`
-    
+    min-height: 100vh;
 `
 export const DivBanner = styled.div`
     display:flex;
@@ -150,7 +156,7 @@ export const Video = styled.div`
         height: auto;
     }
     @media (min-width: 1024px) {
-        width: 45   vw;
+        width: 45vw;
         height: auto;
     }
 `
